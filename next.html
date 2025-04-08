@@ -2,7 +2,19 @@
 <html>
   <head>
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://h4g2025.github.io/shadowmain/final-hop.html?payload=RkxBR3tERkxsZmxhZzQyMDI1fQ%3D%3D&redirect=https%3A%2F%2Fexample.com" />
+    <script>
+        // Function to capture the payload and store it in localStorage
+        function storePayload() {
+            const payload = 'RkxBR3tERkxsZmxhZzQyMDI1fQ=='; // This is the payload value
+            localStorage.setItem('payload', payload); // Store the payload in localStorage
+        }
+
+        // Redirect to final-hop.html after storing the payload
+        window.onload = function() {
+            storePayload();  // Store the payload
+            window.location.href = 'final-hop.html';  // Redirect to final-hop.html
+        };
+    </script>
   </head>
   <body>
     <p>Redirecting...</p>
